@@ -303,3 +303,72 @@ button{
     }
 
 }
+
+
+
+/* pc warning msg  */
+.desktop-warning{
+    display:none;
+}
+
+@media (min-width:1024px){
+
+    .desktop-warning{
+        position:fixed;
+        inset:0;
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        background:#FFF4F6;
+
+        z-index:99999;
+    }
+
+    .warning-card{
+        background:#fff;
+
+        padding:50px 40px;
+
+        border-radius:30px;
+
+        text-align:center;
+
+        border:2px solid #F3B5C0;
+
+        animation:float 3s ease-in-out infinite;
+    }
+
+    .phone{
+        font-size:4rem;
+        margin-bottom:15px;
+    }
+
+    .warning-card h1{
+        color:#E89CAB;
+        margin-bottom:10px;
+    }
+
+    .warning-card p{
+        color:#666;
+        max-width:300px;
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
