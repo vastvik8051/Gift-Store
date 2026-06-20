@@ -58,6 +58,7 @@ button{
     position:sticky;
     top:0;
     z-index:1000;
+    position:relative;
 }
 
 .logo{
@@ -86,6 +87,13 @@ button{
 /* MOBILE MENU */
 
 .mobile-menu{
+    position:absolute;
+
+    top:100%;
+    left:0;
+
+    width:100%;
+
     background:#fff;
 
     display:flex;
@@ -97,6 +105,8 @@ button{
     transition:max-height .3s ease;
 
     box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+    z-index:999;
 }
 
 .mobile-menu a{
@@ -104,8 +114,8 @@ button{
 
     border-top:1px solid #f3f3f3;
 
-    font-weight:500;
     color:#555;
+    font-weight:500;
 }
 
 .mobile-menu.active{
@@ -115,7 +125,7 @@ button{
 /* HERO */
 
 .hero{
-    padding: 20px 10px;
+    padding: 20px 10px 0;
 }
 
 .hero-slider{
@@ -199,13 +209,13 @@ button{
 /* ABOUT */
 
 .about{
-    padding:20px 10px;
+    padding:20px 10px 0;
 }
 
 .about-card{
     background:#fff;
 
-    border:2px solid #F3B5C0;
+    /* border:2px solid #F3B5C0; */
 
     border-radius:25px;
 
@@ -225,7 +235,7 @@ button{
 
     margin-bottom:15px;
 
-    font-size:1.5rem;
+    font-size:1.1rem;
 }
 
 .about-card p{
