@@ -398,6 +398,174 @@ button {
     transform: scale(.98);
 }
 
+/* notif  tab  */
+.hamper-popup{
+    position:fixed;
+
+    bottom:20px;
+    right:10px;
+
+    width:280px;
+
+    background:var(--pink);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    border:2px solid var(--border);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+    z-index:9999;
+
+    transform:translateY(120%);
+
+    transition:.4s ease;
+}
+
+.hamper-popup.show{
+    transform:translateY(0);
+}
+
+.hamper-popup h3{
+    color: white;
+    margin-bottom:10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.hamper-popup p{
+    color:whitesmoke;
+    margin-bottom:12px;
+}
+
+.popup-btn{
+    display:block;
+
+    text-align:center;
+
+    background: white;
+    color:var(--pink);
+
+    padding:12px;
+
+    border-radius:999px;
+
+    font-weight:600;
+}
+
+.close-popup{
+    position:absolute;
+
+    top:10px;
+    right:10px;
+
+    font-size:1rem;
+}
+
+.hamper-mini{
+    position:fixed;
+
+    bottom:20px;
+    right:10px;
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-size:1.5rem;
+
+    display:none;
+
+    z-index:9999;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.hamper-mini.show{
+    display:block;
+}
+
+/* FOOTER */
+
+.footer{
+    background:var(--pink);
+
+    padding:30px 20px;
+
+    margin-top:40px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin-bottom:12px;
+}
+
+.footer-logo img{
+    width:45px;
+    height:45px;
+    object-fit:cover;
+}
+
+.footer-logo span{
+    color:#fff;
+    font-size:1rem;
+    font-weight:700;
+}
+
+.footer-brand{
+    grid-column:1 / -1;
+}
+
+.footer-brand p{
+    color:rgba(255,255,255,.9);
+
+    font-size:.85rem;
+    line-height:1.7;
+}
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.footer-links h4{
+    color:#fff;
+
+    font-size:.8rem;
+
+    margin-bottom:5px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+}
+
+.footer-links a{
+    color:rgba(255,255,255,.9);
+
+    font-size:.8rem;
+}
+
+
+
+
 
 
 /* responsive */
@@ -452,7 +620,18 @@ button {
         font-size: 1rem;
     }
 
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
 }
+
+
+
+
+
+
 
 
 
